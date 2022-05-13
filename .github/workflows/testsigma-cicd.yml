@@ -33,4 +33,4 @@ jobs:
         run: |
           cd ${{ github.workspace }}/testsigma
           chmod a+x run_smoke_tests.sh
-          sh run_smoke_tests.sh
+          ./run_smoke_tests.sh
