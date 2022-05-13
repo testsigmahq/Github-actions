@@ -35,9 +35,8 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
       - name: Run Testsigma Automation Suites
-        run: cd ${{ github.workspace }}/testsigma
-      - name: Make Script file executable 
-        run: chmod a+x run_smoke_tests.sh
-      - name: Trigger Testsigma Test plan
-        run: sh run_smoke_tests.sh
+        run: |
+          cd ${{ github.workspace }}/testsigma
+          chmod a+x run_smoke_tests.sh
+          sh run_smoke_tests.sh
       - name: Completed executing automation test cases
