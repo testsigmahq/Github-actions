@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: 'On Changes to Github-actions'
 
 # Controls when the workflow will run
 on: 
@@ -34,4 +34,3 @@ jobs:
           cd ${{ github.workspace }}/testsigma
           chmod a+x run_smoke_tests.sh
           sh run_smoke_tests.sh
-      - name: Completed executing automation test cases
